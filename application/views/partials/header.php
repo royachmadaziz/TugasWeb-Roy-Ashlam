@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Gedebook :)</title>
+        <title>Code-book :)</title>
         <link rel="stylesheet" href="<?php echo base_url('semantic/dist/semantic.min.css') ?>">
         <link rel="icon" href="<?php echo base_url('/assets/img/book.png'); ?> ">
     </head>
