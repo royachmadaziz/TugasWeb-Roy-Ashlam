@@ -7,7 +7,7 @@ class Books extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('Books_model');
-		$this->load->model('Like_model');
+		// $this->load->model('Like_model');
 		$this->load->model('Review_model');
 		$this->load->model('Cetak_model');
 
@@ -82,8 +82,8 @@ class Books extends CI_Controller
 	public function details($id){
 
 		$data['comments'] = $this->Review_model->getComment($id);
-		$data['filter']   = $this->Like_model->filter($id);
-		$data['like']     = $this->Like_model->count_like($id);
+		// $data['filter']   = $this->Like_model->filter($id);
+		// $data['like']     = $this->Like_model->count_like($id);
 		$data['book']     = $this->Books_model->detailById($id);
 		$data['buku']	  = $this->Cetak_model->getIdBuku($id);
 		$this->form_validation->set_rules('reply','reply','trim|required');
