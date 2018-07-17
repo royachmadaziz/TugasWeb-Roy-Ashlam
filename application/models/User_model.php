@@ -4,7 +4,7 @@ class User_model extends CI_Model {
 
 		public function getWriter(){
 			$uery = $this->db->get_where('pengguna', array('role' => 'writer'));
-			return $query->result();
+			return $uery->result();
 		}
 		
 		public function register(){
